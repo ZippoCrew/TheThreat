@@ -18,9 +18,9 @@ namespace TheThreat
 
         public List<string> PickUp(string input)
         {
-            if(input == "nehmen " + itemName)
+            if (input == "nehmen " + itemName)
             {
-                if(player.Inventar.Contains(itemName))
+                if (player.Inventar.Contains(itemName))
                 {
                     Console.WriteLine("Du hast diese Item bereits dabei.");
                 }
@@ -35,9 +35,9 @@ namespace TheThreat
 
         public bool Use(string input, string itemName, string useText, bool useBool)
         {
-            if(input == "benutzen " + itemName)
+            if (input == "benutzen " + itemName)
             {
-                if(player.Inventar.Contains(itemName))
+                if (player.Inventar.Contains(itemName))
                 {
                     Console.WriteLine(useText);
                     useBool = false;

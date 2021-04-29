@@ -28,7 +28,7 @@ namespace TheThreat
                 Console.WriteLine(answerThree);
             }
             gespräch = true;
-            while(gespräch)
+            while (gespräch)
             {
                 string input = Console.ReadLine();
                 if (input == "a" | input == "A")

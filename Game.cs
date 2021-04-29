@@ -46,20 +46,20 @@ namespace TheThreat
                         Console.WriteLine("Du bist im Jungle.");
                         countLocation++;
                     }
-                    else if(envi == 3 && countLocation == 0)
+                    else if (envi == 3 && countLocation == 0)
                     {
-                        if(TürHütteClosed == false)
+                        if (TürHütteClosed == false)
                         {
                             Console.WriteLine("Du bist in der Hütte.");
                             countLocation++;
                         }
-                        if(TürHütteClosed == true)
+                        if (TürHütteClosed == true)
                         {
                             Console.WriteLine("Die 'Tür' der Hütte ist zugesperrt und du kommst nicht hinein.");
                             countLocation++;
                         }
                     }
-                    else if(envi == 4 && countLocation == 0)
+                    else if (envi == 4 && countLocation == 0)
                     {
                         Console.WriteLine("Du bist auf der Lichtung im Jungle.");
                         countLocation++;
@@ -71,7 +71,7 @@ namespace TheThreat
                         case 0:   // FELSEN UMEGEBUNG
                             // Umsehen
                             player.LookAround(input, "Du siehst dich bei den 'Felsen' um und entdeckst ein 'Skelett' eines Tieres und ein 'glänzendes etwas', das ihm an den 'Rippen' hängt. In der Ferne ist der unendliche" + Environment.NewLine +
-                                " 'Jungle' zu sehen und du erblickst den 'Strand'. Da solltest du vielleicht mal hin'gehen'.");
+                                "'Jungle' zu sehen und du erblickst den 'Strand'. Da solltest du vielleicht mal hin'gehen'.");
                             // Ansehen
                             player.LookAt(input, "Felsen", "Ein paar Felsen, grau in grau.");
                             player.LookAt(input, "Skelett", "Du siehst dir das Skelett an und es ist komplett abgenagt. Wohl schon länger tot.");
@@ -89,10 +89,12 @@ namespace TheThreat
                                 if (input.Contains("Strand"))
                                 {
                                     player.Move(1);
-                                }else if (input.Contains("Jungle"))
+                                }
+                                else if (input.Contains("Jungle"))
                                 {
                                     player.Move(2);
-                                }else
+                                }
+                                else
                                 {
                                     Console.WriteLine("Tut mir leid da kann ich nicht hingehen. Das ist zu weit weg.");
                                 }
@@ -113,16 +115,19 @@ namespace TheThreat
                             // Bewegen möglich machen
                             if (input.Contains("gehen"))
                             {
-                                if(input.Contains("Hütte"))
+                                if (input.Contains("Hütte"))
                                 {
                                     player.Move(3);
-                                }else if (input.Contains("Felsen"))
+                                }
+                                else if (input.Contains("Felsen"))
                                 {
                                     player.Move(0);
-                                }else if (input.Contains("Jungle"))
+                                }
+                                else if (input.Contains("Jungle"))
                                 {
                                     player.Move(2);
-                                }else
+                                }
+                                else
                                 {
                                     Console.WriteLine("Tut mir leid da kann ich nicht hingehen. Das ist zu weit weg.");
                                 }
@@ -141,13 +146,16 @@ namespace TheThreat
                                 if (input.Contains("Strand"))
                                 {
                                     player.Move(1);
-                                }else if (input.Contains("Felsen"))
+                                }
+                                else if (input.Contains("Felsen"))
                                 {
                                     player.Move(0);
-                                }else if(input.Contains("Lichtung"))
+                                }
+                                else if (input.Contains("Lichtung"))
                                 {
                                     player.Move(4);
-                                }else if(input.Contains("Hütte"))
+                                }
+                                else if (input.Contains("Hütte"))
                                 {
                                     player.Move(3);
                                 }
@@ -161,7 +169,7 @@ namespace TheThreat
 
 
                         case 3:   // Hütte Umgebung
-                            if(TürHütteClosed == true)
+                            if (TürHütteClosed == true)
                             {
                                 //Umsehen
                                 player.LookAround(input, "Die 'Tür' hat anstatt einer Türklinke nur ein quadratisches 'Loch'.");
@@ -210,7 +218,7 @@ namespace TheThreat
                             player.LookAt(input, "Feuer", "Das Feuer das in der Mitte der Lichtung brennt erfüllt nicht wirklich einen Zweck, ist wohl zur Abschreckung von wilden Tieren gedacht.");
                             player.LookAt(input, "Frau", "Die 'Frau' die du entdeckt hast scheint gerade beschäftigt zu sein. Vielleicht würde es sich lohnen mit ihr zu 'sprechen'.");
                             // Gespräch Frau
-                            if(input == "sprechen Frau")
+                            if (input == "sprechen Frau")
                             {
                                 bool firstContact = false;
                                 amalia.Communicate("A: Wie heißt du?", "B: Woher kam der Schrei?", string.Empty, "Mein Name ist " + amalia.npcName, "Ich habe mich geschnitten.", string.Empty, firstContact);

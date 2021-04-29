@@ -16,10 +16,10 @@ namespace TheThreat
             // Zuweisung mit this.
             this.game = game;
         }
-        public int leben = 1000; 
+        public int leben = 1000;
         public void LookAround(string input, string umsehenText)
         {
-            if(input == "umsehen")
+            if (input == "umsehen")
             {
                 Console.WriteLine(umsehenText);
             }
@@ -43,11 +43,11 @@ namespace TheThreat
                 {
                     Console.WriteLine(ansehenText);
                 }
-            }   
+            }
         }
         public void InventarCall(string input, List<string> Inventar)
         {
-            if(input == "Inventar")
+            if (input == "Inventar")
             {
                 Console.WriteLine("Inventar:");
                 if (Inventar.Count == 0)
