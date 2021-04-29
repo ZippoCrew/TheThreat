@@ -1,0 +1,7 @@
+C:\Users\sziep\source\repos\TheThreat\bin\Debug\TheThreat.exe.config
+C:\Users\sziep\source\repos\TheThreat\bin\Debug\TheThreat.exe
+C:\Users\sziep\source\repos\TheThreat\bin\Debug\TheThreat.pdb
+C:\Users\sziep\source\repos\TheThreat\obj\Debug\TheThreat.csprojAssemblyReference.cache
+C:\Users\sziep\source\repos\TheThreat\obj\Debug\TheThreat.csproj.CoreCompileInputs.cache
+C:\Users\sziep\source\repos\TheThreat\obj\Debug\TheThreat.exe
+C:\Users\sziep\source\repos\TheThreat\obj\Debug\TheThreat.pdb
